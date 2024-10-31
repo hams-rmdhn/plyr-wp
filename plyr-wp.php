@@ -47,6 +47,6 @@ function plyr( $atts ) {
 		
 	';
 		
-	return $output;
+	return $output;  
 
 }
