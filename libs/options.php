@@ -13,7 +13,7 @@
  * @updated		2024-09-11 by Ilham Wahyudin (Plugin Check Compatibility)
  */
 
-class PlyrWp {
+class BambuRuncing {
 	/* ==========================================================================
 	   Vars
 	   ========================================================================== */
@@ -916,25 +916,128 @@ class PlyrWp {
  */
 
  $pages = array(
-    'plyr-wp-settings' => array(
+    'bambu-runcing-security' => array(
         'parent_slug' => 'studio-inspirasi',
-        'page_title'  => __( 'Inspirasi Player Settings', 'plyr-wp' ),
+        'page_title'  => __( 'Bambu Runcing Security', 'bambu-runcing' ),
         'sections'    => array(
             'section-one' => array(
-                'title'  => __( 'General', 'plyr-wp' ),
+                'title'  => __( 'General', 'bambu-runcing' ),
                 'fields' => array(
-                    'theme-color' => array(
-                        'title' => __( 'Theme Color', 'plyr-wp' ),
-                        'type'  => 'color',
-                        'value' => '#f6f8fb',
-                    ),
-                    'autoplay' => array(
-                        'title'   => __( 'Autoplay', 'plyr-wp' ),
+                    'xml-rpc' => array(
+                        'title'   => __( 'XML RPC', 'bambu-runcing' ),
                         'type'    => 'select',
                         'choices' => array(
-                            'true'  => __( 'Enabled', 'plyr-wp' ),
-                            'false' => __( 'Disabled', 'plyr-wp' ),
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
                         ),
+                    ),
+					'wp-version' => array(
+                        'title'   => __( 'WordPress Version', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-file-editor' => array(
+                        'title'   => __( 'File Editor', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-limit-login-attempts' => array(
+                        'title'   => __( 'Limit Login Attempts', 'bambu-runcing' ),
+                        'type'    => 'number',
+                    ),
+					'wp-adminbar' => array(
+                        'title'   => __( 'Admin Bar', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-wp-logo' => array(
+                        'title'   => __( 'WordPress Logo', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-footer-credit' => array(
+                        'title'   => __( 'WordPress Footer Credit', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-version-credit' => array(
+                        'title'   => __( 'WordPress Version Credit', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-update-bar' => array(
+                        'title'   => __( 'Update Bar', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-comment-bar' => array(
+                        'title'   => __( 'Comment Bar', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-newpost-bar' => array(
+                        'title'   => __( 'Newpost Bar', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                            'false' => __( 'Disabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-honeypot' => array(
+                        'title'   => __( 'Honeypot', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+							'false' => __( 'Disabled', 'bambu-runcing' ),
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-security-headers' => array(
+                        'title'   => __( 'Security Headers', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+							'false' => __( 'Disabled', 'bambu-runcing' ),
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-always-https' => array(
+                        'title'   => __( 'Always HTTPS', 'bambu-runcing' ),
+                        'type'    => 'select',
+                        'choices' => array(
+							'false' => __( 'Disabled', 'bambu-runcing' ),
+                            'true'  => __( 'Enabled', 'bambu-runcing' ),
+                        ),
+                    ),
+					'wp-redirect-after-login' => array(
+                        'title'   => __( 'Redirect After Login', 'bambu-runcing' ),
+                        'type'    => 'url',
+                    ),
+					'wp-redirect-after-registration' => array(
+                        'title'   => __( 'Redirect After Registration', 'bambu-runcing' ),
+                        'type'    => 'url',
                     ),
                 ),
             ),
@@ -942,4 +1045,4 @@ class PlyrWp {
     ),
 );
 
-$option_page = new PlyrWp( $pages );
+$option_page = new BambuRuncing( $pages );

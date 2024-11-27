@@ -1,17 +1,17 @@
 <?php
 
 /** Register Activation Hook */
-function plyr_wp_activation() {
+function bambu_runcing_activation() {
 
     // Set default unlicensed options
-    set_plyr_wp_options();
+    set_bambu_runcing_options();
 
 }
 
 /** Register Deactivation Hook */
-function plyr_wp_deactivation() {
+function bambu_runcing_deactivation() {
 
     // Set default unlicensed options
-    set_plyr_wp_options();
+    set_bambu_runcing_options();
 
 }
